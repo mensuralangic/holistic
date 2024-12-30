@@ -1,4 +1,5 @@
 import MyButton from './MyButton';
+import Icon from './Icon';
 
 
 const Navbar = () => {
@@ -18,6 +19,15 @@ const Navbar = () => {
                         to="/blog"
                         title='BLOG'
                     />
+                     <MyButton
+                        title='SHOP'  
+                    />
+                    <MyButton
+                        to="/contact"
+                        title='CONTACT'
+                    />
+                    {/* /* shop button ce biti padajuci meni */}
+                    <Icon name="Facebook" />
 
                 </div>
             </div>
