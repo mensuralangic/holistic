@@ -1,5 +1,6 @@
 import MyButton from './MyButton';
 import Icon from './Icon';
+import Dropdown from './Dropdown';
 
 
 const Navbar = () => {
@@ -8,12 +9,12 @@ const Navbar = () => {
         <div className="bg-emerald-600 px-24 pt-12 pb-16 text-white sticky top-0 ">
             <div className="container mx-auto flex items-start justify-between">
                 <div className="text-7xl">
-                    <MyButton 
+                    <MyButton
                         to="/home"
                         title='LOGO'
                     />
                 </div>
-                <div className="flex gap-10">
+                <div className="flex items-center">
                     <MyButton
                         to="/about"
                         title='ABOUT'
@@ -22,14 +23,16 @@ const Navbar = () => {
                         to="/blog"
                         title='BLOG'
                     />
-                     <MyButton
-                        title='SHOP'  
-                    />
+                    <Dropdown list={[
+                        {to: '/emin', title: "Emin"},
+                        {to: '/munir', title: "Munir"},
+                        {to: '/esma', title: "Esma"},
+                        {to: '/mensa', title: "Mensa"},
+                    ]} />
                     <MyButton
                         to="/contact"
                         title='CONTACT'
                     />
-                    {/* /* shop button ce biti padajuci meni */}
                     <Icon name="Facebook" />
 
                 </div>

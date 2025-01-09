@@ -6,7 +6,7 @@ function MyButton({ to, title }) {
         <NavLink
             to={to}
             className={({ isActive }) =>
-                isActive ? "font-semibold underline" : ""
+                isActive ? "font-semibold underline  py-4 px-8" : "py-4 px-8"
             }
         >
             {title}

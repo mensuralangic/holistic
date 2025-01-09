@@ -8,11 +8,13 @@ import Blog from './Blog';
 import Navbar from './Navbar';
 import Contact from './Contact';
 import Home from './Home';
+import Footer from './Footer';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <Navbar />
+      <main>
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/about" element={<About />} />
@@ -20,6 +22,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/contact" element={<Contact />} />
           <Route path="/home" element={<Home />} />
         </Routes>
+      </main>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 );
