@@ -24,10 +24,9 @@ const Navbar = () => {
                         title='BLOG'
                     />
                     <Dropdown list={[
-                        {to: '/emin', title: "Emin"},
-                        {to: '/munir', title: "Munir"},
-                        {to: '/esma', title: "Esma"},
-                        {to: '/mensa', title: "Mensa"},
+                        {to: '/literature', title: "Literature"},
+                        {to: '/dietarysupplements', title: "Dietary supplements"},
+                        {to: '/courses', title: "Courses"},
                     ]} />
                     <MyButton
                         to="/contact"
