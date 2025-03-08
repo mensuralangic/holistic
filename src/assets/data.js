@@ -1,7 +1,7 @@
-import recepti from "./assets/recepti.png"
-import oleum from "./assets/oleum.png"
-import navike from "./assets/navike.png"
-import suplementi from "./assets/suplementi.png"
+import recepti from "./recepti.png"
+import oleum from "./oleum.png"
+import navike from "./navike.png"
+import suplementi from "./suplementi.png"
 
 export const blog = [
     {

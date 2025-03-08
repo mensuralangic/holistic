@@ -1,4 +1,4 @@
-import { blog } from "./data.js"
+import { blog } from "../assets/data.js"
 
 function BlogMenu({ img, title, description }) {
     return (
